@@ -1,0 +1,36 @@
+.movieCard{
+    width: auto;
+    height: auto;
+    margin: 10%;
+
+}
+
+.movieCard img{
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.movieCard img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .movieCard {
+        margin: 5%;
+    }
+
+    .movieCard img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movieCard img {
+        max-width: 80px; 
+    }
+}

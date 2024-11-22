@@ -1,0 +1,9 @@
+.container-home{
+    margin: 30px;
+}
+
+@media (max-width: 768px) {
+    .container-home{
+        margin: 10px;
+    }
+}

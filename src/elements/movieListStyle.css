@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.movie-list{
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 100px;
+    scroll-behavior: smooth;
+}
+
+.image-container{
+    flex-shrink: 0;
+}
+
+.movie-card img{
+    width: 100%;
+    height: auto;
+    border-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+    .movie-list {
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-list {
+        gap: 5px;
+    }
+}

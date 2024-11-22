@@ -1,0 +1,265 @@
+/* Overlay para o fundo escuro transparente */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ReactModal__Content {
+    background: transparent
+}
+.ReactModal__Overlay{    background: transparent;
+}
+
+
+/* Estilização da janela modal */
+.movieDetail {
+    width: auto;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Parte superior com o título à esquerda e nota + botão fechar à direita */
+.up-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-movie-modal {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(189, 18, 18);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.up-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nota-modal{
+    color: rgb(143, 141, 141);
+    padding-right: 40px;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-modal {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.close-modal {
+    background-color: black;
+    color: rgb(189, 18, 18);
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-modal:hover{
+    background-color: rgb(189, 18, 18);
+    color: black;
+}
+
+/* Parte do meio com a imagem e descrição/ano */
+.box-middle {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.box-middle img {
+    width: 300px;
+    height: auto;
+    margin-right: 100px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.middle-right{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-modal {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(189, 18, 18);
+}
+
+.middle-right .text-modal {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+/* Parte inferior com os botões */
+.box-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.box-bottom button{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.not-favorited {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.favorited {
+    background-color: black;
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.not-saved {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.saved {
+    background-color: black;
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@media (max-width: 768px){
+    
+    /* Estilização da janela modal */
+    .movieDetail {
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    /* Parte superior com o título à esquerda e nota + botão fechar à direita */
+    .up-part {
+        margin-bottom: 5px;
+    }
+    
+    .title-movie-modal {
+        font-size: 12px;
+    }
+    
+    .nota-modal{
+        padding-right: 10px;
+        font-size: 10px;
+    }
+    
+    .text-modal {
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    
+    .close-modal {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    /* Parte do meio com a imagem e descrição/ano */
+    .box-middle {
+        margin-bottom: 10px;
+    }
+    
+    .box-middle img {
+        width: 80px;
+        height: auto;
+        margin-right: 10px;
+        margin-left: 5px;
+        border-radius: 5px;
+    }
+    
+    .middle-right{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .title-modal {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    
+    .middle-right .text-modal {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    
+    
+    /* Parte inferior com os botões */
+    .box-bottom {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .box-bottom button{
+        font-size: 8px;
+    }
+    
+    .not-favorited {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .favorited {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .not-saved {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .saved {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+}

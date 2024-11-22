@@ -1,0 +1,9 @@
+.movies-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+.movieCard{
+    display: row;
+}
+

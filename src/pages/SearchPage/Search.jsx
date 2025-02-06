@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./searchStyle.css"
 import { useSearchParams } from "react-router-dom";
-import MovieCard from "../elements/movieCard";
+import MovieCard from "../../elements/movieCard";
 
 const searchURl = import.meta.env.VITE_SEARCH;
 const apikey = import.meta.env.VITE_KEY;

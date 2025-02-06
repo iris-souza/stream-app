@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import MovieList from "../elements/movieList";
+import MovieList from "../../elements/movieList";
 import "./conf-pag.css";
 import {
   getMostWatchedMovies,
   getTopRatedMovies
-} from "./services/movieServices.jsx";
-import { useMovieList } from '../context/context.jsx';
+} from "../../services/movieServices.jsx";
+import { useMovieList } from "../../context/context";
 
 const Home = () => {
   const [mostWatchedMovies, setMostWatchedMovies] = useState([]);

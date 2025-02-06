@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx'
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home.jsx';
-import Search from './pages/Search.jsx';
-import Favorites from './pages/Favoritos.jsx';
-import WatchLater from './pages/SuaLista.jsx';
+import Home from './pages/Home/Home.jsx';
+import Search from './pages/SearchPage/Search.jsx';
+import Favorites from './pages/Favorites/Favoritos.jsx';
+import WatchLater from './pages/watchLater/SuaLista.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

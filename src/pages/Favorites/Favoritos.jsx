@@ -1,6 +1,6 @@
 import React from 'react';
-import MovieCard from '../elements/movieCard.jsx';
-import { useMovieList } from '../context/context.jsx';
+import MovieCard from '../../elements/movieCard.jsx';
+import { useMovieList } from '../../context/context.jsx';
 
 const Favorites = () => {
     const { favorites, toggleFavorite } = useMovieList();

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { useMovieList } from "../context/context";
-import MovieCard from '../elements/movieCard.jsx';
+import { useMovieList } from "../../context/context.jsx";
+import MovieCard from '../../elements/movieCard.jsx';
 
 const WatchLater = () => {
     const { watchLater, toggleSaveForLater } = useMovieList();

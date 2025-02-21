@@ -12,6 +12,22 @@ const Home = () => {
   const [topMovies, setTopMovies] = useState([]);
   const { favorites, watchLater } = useMovieList(); 
 
+  const extractFileName = () => {
+    const link = "http://sitequalquer.com/postjfD24-01-2024---sessao40nfdvre0409";
+    const regex = /(\d{2}-\d{2}-\d{4}---sessao\d{4})/;
+    const match = link.match(regex);
+
+    if (match) {
+      const fileName = match[1] + ".pdf"; // Adiciona a extensão .pdf
+      console.log(fileName); // Saída: "24-01-2024---sessao0409.pdf"
+    }
+  };
+
+  // Executa a extração do nome do arquivo quando o componente é montado
+  useEffect(() => {
+    extractFileName();
+  }, []);
+
   useEffect(() => {
     const fetchMovies = async () => {
       try {

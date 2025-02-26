@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import MovieModal from "./movieDetail";
-import { useMovieList } from "../context/context";
+import MovieModal from "../movieDetail/movieDetail"
+import { useMovieList } from "../../context/context";
 import "./card-style.css";
 
 const imagesURL = import.meta.env.VITE_IMAGE;

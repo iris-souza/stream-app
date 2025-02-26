@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 import { Outlet } from 'react-router-dom';
 import './App.css'
-import Navbar from "./elements/Navbar"
+import Header from './elements/header/header'
 import { MovieListProvider } from './context/context';
 
 function App() {
   return(
     <MovieListProvider>
-      <Navbar/>
+      <Header/>
       <Outlet/>
     </MovieListProvider>
   );

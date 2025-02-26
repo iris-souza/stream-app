@@ -1,5 +1,6 @@
+import React from 'react';
 import { useState, useEffect } from "react";
-import MovieList from "../../elements/movieList";
+import MovieList from "../../elements/movieList/movieList.jsx";
 import "./conf-pag.css";
 import {
   getMostWatchedMovies,

@@ -32,7 +32,7 @@ Certifique-se de que seu ambiente atende aos seguintes requisitos:
 
 1. **Inicie o servidor de desenvolvimento:**
    ```bash
-   npm run dev
+   npm start
    ```
 
 2. Abra o navegador e acesse:  
@@ -40,16 +40,3 @@ Certifique-se de que seu ambiente atende aos seguintes requisitos:
 
 ---
 
-## **Scripts disponíveis**
-
-- `npm run dev`: Inicia o servidor de desenvolvimento.
-- `npm run build`: Compila o aplicativo para produção.
-- `npm start`: Executa o aplicativo em produção (após o build).
-
----
-
-Este projeto está sob a licença [MIT](LICENSE).
-
----
-
-Sinta-se à vontade para ajustar conforme o contexto do projeto! 😊
